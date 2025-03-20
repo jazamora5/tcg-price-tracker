@@ -1,6 +1,6 @@
-// Triggering a redeployment - Joey Zamora
-
 "use client";
+
+// Triggering a redeployment - Joey Zamora
 
 import { useState, useEffect } from "react";
 import { Input } from "@/components/ui/input";
