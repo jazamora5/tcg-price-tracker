@@ -23,7 +23,7 @@ export default function PriceTracker() {
     }
   }, [cards]);
 
-  const fetchPrice = async (cardName) => {
+  const fetchPrice = async (cardName: string) => {
     const price = (Math.random() * 50).toFixed(2);
     return { name: cardName, price };
   };
