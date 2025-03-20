@@ -9,7 +9,7 @@ import { Table, TableHead, TableRow, TableHeader, TableBody, TableCell } from "@
 // Triggering a redeployment - Joey Zamora
 
 export default function PriceTracker() {
-  const [cards, setCards] = useState([]);
+  const [cards, setCards] = useState<{ name: string; price: string }[]>([]);
   const [input, setInput] = useState("");
 
   useEffect(() => {
