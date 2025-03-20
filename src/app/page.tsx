@@ -1,19 +1,19 @@
 "use client";
 
-// Triggering a redeployment - Joey Zamora
-
 import { useState, useEffect } from "react";
 import { Input } from "@/components/ui/input";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 import { Table, TableHead, TableRow, TableHeader, TableBody, TableCell } from "@/components/ui/table";
 
+// Triggering a redeployment - Joey Zamora
+
 export default function PriceTracker() {
   const [cards, setCards] = useState([]);
   const [input, setInput] = useState("");
 
   useEffect(() => {
-    const storedCards = JSON.parse(localStorage.getItem("trackedCards")) || [];
+    const storedCards = JSON.parse(localStorage.getItem("trackedCards") || "[]");
     setCards(storedCards);
   }, []);
 
